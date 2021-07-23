@@ -11,7 +11,7 @@ class HelloWorld(unittest.TestCase):
         pass
 
     def tearDown(self):
-        return super().tearDown()
+        self.driver.quit()
 
 if __name__ == "__main__":
     unittest.main(verbosity = 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'hello-world-report' ))
