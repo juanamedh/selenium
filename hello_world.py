@@ -10,7 +10,8 @@ class HelloWorld(unittest.TestCase):
         driver.implicitly_wait(10)
 
     def test_hello_world(self):
-        pass
+        driver = self.driver
+        driver.get('https://www.platzi.com')
 
     def tearDown(self):
         self.driver.quit()
