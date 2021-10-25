@@ -1,6 +1,6 @@
 import unittest
 from pyunitreport import HTMLTestRunner
-from seleniumm import webdriver
+from selenium import webdriver
 
 class HelloWorld(unittest.TestCase):
     
